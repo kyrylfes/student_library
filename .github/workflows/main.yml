@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: 3.11
       - name: Install Virtual Environment
-        run: py -m venv env && env/Scripts/activate
+        run: python -m venv env && source env/bin/activate
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Check ${{ matrix.build_target }}
