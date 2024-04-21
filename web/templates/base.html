@@ -4,8 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href=" {% static 'css/main.css' %}">
 </head>
 <body>
-{% block content %}{% endblock %}
+    <header class="header">
+        <div class="container d-flex">
+            <nav class="header__menu d-flex">
+                <ul class="header__list d-flex">
+                    <li class="header__item">
+                        <a href="#" class="header__link">
+                            Книги
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">
+                            Матеріали
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header_socials d-flex">
+                <a href="#">
+                    <img src="{% static 'img/telegram-1.svg' %}" alt="Telegram bot">
+                </a>
+                <a href="#">
+                    <img src="{% static 'img/knu_logo.png' %}" alt="KNU Website">
+                </a>
+            </div>
+        </div>
+    </header>
+    {% block content %}{% endblock %}
 </body>
 </html>

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Library{% endblock %}
+
+{% block content %}
+
+<section class="materials">
+    <div class="container d-flex">
+        <form method="POST">
+            <h2>Фільтри</h2>
+            <div class="materials__list">
+                <input type="text" class="materials__filter">
+            </div>
+        </form>
+        <div class="materials__list">
+            <div class="materials__block">
+                <h1 class="materials__title">
+                    Название первого
+                </h1>
+                <p class="materials__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda blanditiis corporis culpa, deleniti, excepturi
+                </p>
+                <p class="materials__user">User</p>
+                <p class="materials__type">Type</p>
+                <p class="materials__year">2024</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
